@@ -1,0 +1,35 @@
+﻿<Window x:Class="piggychan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:piggychan"
+        mc:Ignorable="d"
+        Title="rorochan" Height="500" Width="500"
+        Background="#FFC3D5" Icon="/bubble.gif">
+    <Grid>
+        <Grid.ColumnDefinitions>
+
+        </Grid.ColumnDefinitions>
+        <Button Content="click me!!" 
+                HorizontalAlignment="Center" Margin="0,149,0,0" 
+                VerticalAlignment="Top"  
+                Background="LightPink" Click="Button_Click"
+                FontFamily="MS Gothic" FontSize="10"
+                Padding="16" RenderTransformOrigin="0.499,0.499"/>
+        <Button VerticalAlignment="Center" 
+                HorizontalAlignment="Center"
+                Background="LightBlue"
+                Content="dont click me or i will be very sad and cry all night!!" FontFamily="MS Gothic" FontSize="10"
+                Padding="20"
+                Click="Button_Click_1"/>
+        <Image HorizontalAlignment="Center" Height="61" Margin="0,77,0,0" VerticalAlignment="Top" Width="54" Source="/bubble.gif"
+               MouseDown="Image_MouseDown"/>
+        <MediaElement x:Name="myGif" UnloadedBehavior="Manual"  
+                      Source="https://media.tenor.com/LL72w7b7VnoAAAAC/kawaii-anime-girl.gif" 
+                      LoadedBehavior="Play" Stretch="Uniform" Margin="120,272,120,14"
+                      MediaEnded="myGif_MediaEnded"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bubble.gif" />
+    <None Remove="old gif.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bubble.gif" />
+    <Resource Include="old gif.gif" />
+  </ItemGroup>
+
+</Project>
